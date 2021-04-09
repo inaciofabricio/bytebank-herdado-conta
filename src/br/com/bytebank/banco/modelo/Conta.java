@@ -1,6 +1,5 @@
 package br.com.bytebank.banco.modelo;
 
-
 /**
  * Classe representa a moldura de uma conta
  * 
@@ -12,7 +11,7 @@ public abstract class Conta extends Object implements Comparable<Conta> {
     protected double saldo;
     private int agencia;
     private int numero;
-    private Cliente titular;
+    private transient Cliente titular;
     private static int total = 0;
     
     /**
